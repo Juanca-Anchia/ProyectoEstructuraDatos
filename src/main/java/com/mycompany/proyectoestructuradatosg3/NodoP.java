@@ -9,13 +9,14 @@ package com.mycompany.proyectoestructuradatosg3;
  * @author anchi
  */
 public class NodoP {
-    private int id;
-    private String nombre, puesto;
-    private NodoP siguienteP;
+    private int id; // identificador del empleado
+    private String nombre, puesto; // nombre y puesto del empleado
+    private NodoP siguienteP; // enlace al siguiente nodo en la pila
 
+    
     public NodoP() {
     }
-
+// constructor con parametros para inicializar el nodo
     public NodoP(int id, String nombre, String puesto) {
         this.id = id;
         this.nombre = nombre;
@@ -24,7 +25,7 @@ public class NodoP {
     
     
     
-
+//getters y setters
     public int getId() {
         return id;
     }
@@ -56,7 +57,7 @@ public class NodoP {
     public void setSiguienteP(NodoP siguienteP) {
         this.siguienteP = siguienteP;
     }
-    
+    // metodo toString para devolver lacadena con la informacion del nodo
     @Override
     public String toString(){
         return id +"---"+nombre+"---"+puesto;

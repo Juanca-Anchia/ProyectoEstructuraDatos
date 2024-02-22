@@ -9,18 +9,19 @@ package com.mycompany.proyectoestructuradatosg3;
  * @author anchi
  */
 public class NodoA {
-    private int modelo;
-    private int placa;
-    private String marchamo;
-    private String rtv;
-    private String notas;
-    private NodoA siguienteA;
+    private int modelo; //anno del modelo del auto
+    private int placa; // numero de placa del auto
+    private String marchamo; // estado del marchamo
+    private String rtv; // estado de la revision tecnica vehicular
+    private String notas; // notas adicionales sobre el auto
+    private NodoA siguienteA; // enlace al siguiente nodo en la lista
 
+    
     public NodoA() {
     }
     
     
-
+// onsnstructor con parametros para inicializar el nodo
     public NodoA(int modelo, int placa, String marchamo, String rtv, String notas) {
         this.modelo = modelo;
         this.placa = placa;
@@ -29,7 +30,7 @@ public class NodoA {
         this.notas = notas;
         
     }
-
+//getetrs y setters
     public int getModelo() {
         return modelo;
     }
@@ -78,7 +79,7 @@ public class NodoA {
         this.siguienteA = siguienteA;
     }
 
-    
+  // mmetodo toString para devolver la cadena con la informacion del nodo  
     @Override 
     public String toString(){
         return modelo + " --- " + placa + " --- " + marchamo  + " --- " + rtv + " --- " + notas;

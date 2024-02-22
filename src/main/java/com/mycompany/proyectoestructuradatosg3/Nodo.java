@@ -9,13 +9,13 @@ package com.mycompany.proyectoestructuradatosg3;
  * @author anchi
  */
 public class Nodo {
-    private int codigo, precio;
-    private String nombre;
-    private Nodo siguiente;
+    private int codigo, precio; //codigo y precio del servicio
+    private String nombre; //nombre dle servicio
+    private Nodo siguiente; //enlaccxe dcel siguiente nodo de la lista
 
     public Nodo() {
     }
-
+//construictor con los aprametros para inicializar el nodo
     public Nodo(int codigo, String nombre, int precio) {
         this.codigo = codigo;
         this.nombre = nombre;
@@ -23,7 +23,7 @@ public class Nodo {
     }
     
     
-
+//getters setters
     public int getCodigo() {
         return codigo;
     }
@@ -56,7 +56,7 @@ public class Nodo {
         this.siguiente = siguiente;
     }
     
-    
+     // metodo toString para devolver la cadena con la informacion del nodo  
     @Override 
     public String toString(){
         return codigo +"---"+nombre+"---"+precio;

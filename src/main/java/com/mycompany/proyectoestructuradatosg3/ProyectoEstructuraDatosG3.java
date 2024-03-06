@@ -12,16 +12,18 @@ public class ProyectoEstructuraDatosG3 {
 
     public static void main(String[] args) {
         Servicios servicios = new Servicios(); //lista de servicios
-        servicios.almacenarServicios(0, "Llantas", 120000);
-        servicios.almacenarServicios(1, "Aros", 300000);
-        servicios.almacenarServicios(2, "Asientos", 400000);
-        System.out.println(servicios.imprimirServicios(servicios.getPrimero(), ""));
+        servicios.almacenarServicios(new Servicio(3, "Llantas", 120000));
+        servicios.almacenarServicios(new Servicio(1, "Aros", 300000));
+        servicios.almacenarServicios(new Servicio(2, "Asientos", 400000));
+        System.out.println(servicios);
+        System.out.println("____________________________________________________");
         Empleados empleados = new Empleados(); //lista de empleados
         empleados.almacenarEmpleado(0, "Juan", "Mecanico");
         empleados.almacenarEmpleado(1, "Jose", "Gerente");
         empleados.almacenarEmpleado(2, "Marco", "Auxiliar");
         empleados.almacenarEmpleado(3, "Daniel", "Supervisor");
-        
+        System.out.println(empleados);
+        System.out.println("*********************************************");
         /*boolean entrar = false;
         while(entrar == false){
             int s = Integer.parseInt(JOptionPane.showInputDialog("ID: "));
@@ -42,10 +44,10 @@ public class ProyectoEstructuraDatosG3 {
                break;
             }
 
-        }
-        System.out.println(empleados.imprimirEmpleados(empleados.getCima(), ""));*/
+        }*/
         
-        Autos autos = new Autos(); //llista de autos
+        
+        Autos autos = new Autos(); //lista de autos
         autos.almacenarAuto(2020, 12345, "SI", "SI", "n/a");
         autos.almacenarAuto(2024, 16456, "SI", "NO", "ninguna");
         autos.almacenarAuto(2015, 14562, "SI", "SI", "Golpes");
